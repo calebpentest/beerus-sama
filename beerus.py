@@ -14,7 +14,7 @@ def banner():
     print(Fore.CYAN + f"[!] Author     : St34lthv3ct3r")
     print(Fore.CYAN + f"[!] Timestamp  : {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print(Fore.CYAN + f"[!] Operation  : Red Team")
-    print(Fore.GREEN + "[!] Use it at your own risk. Unauthorized access is illegal." + Style.RESET_ALL)
+    print(Fore.GREEN + "[!] Use it at your own risk" + Style.RESET_ALL)
 banner()
 
 
@@ -92,11 +92,11 @@ async def main():
     args = parse_args()
 
     if not args.confirm_consent:
-        print("[!] ERROR: You must confirm authorization with --confirm-consent to proceed.")
+        print("[!] Please make sure you confirm authorization with --confirm-consent to proceed.")
         sys.exit(1)
 
     logger = setup_logger(log_file=args.log_file)
-    logger.info("Beerus the god of websites and server")
+    logger.info("Beerus the lord of websites and server")
     logger.info("Beerus launching attack...")
     logger.info(f"Starting attack: {args.attack} on targets {args.target} for {args.duration}s at rate {args.rate}")
 
