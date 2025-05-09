@@ -10,7 +10,7 @@ import pyfiglet
 from colorama import Fore, Style, init
 
 def banner():
-    print(Fore.LIGHTYELLOW_EX + pyfiglet.figlet_format("SUPER SAIYAN", font="slant"))
+    print(Fore.LIGHTYELLOW_EX + pyfiglet.figlet_format("BEERUS", font="slant"))
     print(Fore.CYAN + f"[!] Author     : St34lthv3ct3r")
     print(Fore.CYAN + f"[!] Timestamp  : {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print(Fore.CYAN + f"[!] Operation  : Red Team")
